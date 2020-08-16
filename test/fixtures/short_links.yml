@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  key: MyString
+  source_url: MyString
+  expire_date: 2020-08-15 06:36:24
+
+two:
+  key: MyString
+  source_url: MyString
+  expire_date: 2020-08-15 06:36:24

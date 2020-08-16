@@ -1,0 +1,24 @@
+<div>
+	<h2>Welcome to Short.com</h2>
+	
+	<div>
+		<%=form_for @short_link, remote: true, id: "short_link_form" do |f| %>
+			<label> Please enter your URL here</label>
+			<br>
+			<%=f.text_field :source_url,required: true %>
+			<%=f.submit "Shorten", :disable_with=>"Please wait..." %>
+			<div id="err_msg" class='text-danger'></div>
+		<% end %>
+		<br>
+		<br>
+
+		<div id='shorted_url_div' style='display:none'>
+			Here is your Short Url!<br>
+			<span class='font-bold'></span>
+			<br>
+			<br>
+			<strong>Note:</strong>
+			<i>This short url is valid for 30 days</i>
+		</div>
+	</div>
+</div>

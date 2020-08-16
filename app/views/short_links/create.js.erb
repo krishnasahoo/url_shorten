@@ -1,0 +1,8 @@
+if('<%@short_link.id.present?%>' == 'true'){
+	$("#shorted_url_div").find("span").html("<%= @short_link.short_url %>")
+	$("#shorted_url_div").show()
+}
+else
+{
+	$("#err_msg").html("<%= @error %>")
+}
