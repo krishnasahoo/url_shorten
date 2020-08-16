@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  short_link: one
+  referer: MyString
+  ip_address: MyString
+  clicks: 1
+  clicked_at: 2020-08-16 08:31:27
+  country: one
+  user_agent: MyString
+
+two:
+  short_link: two
+  referer: MyString
+  ip_address: MyString
+  clicks: 1
+  clicked_at: 2020-08-16 08:31:27
+  country: two
+  user_agent: MyString

@@ -13,7 +13,5 @@ module ShortLinksHelper
     end ## loop end
     return key
   end
-
-
   
 end

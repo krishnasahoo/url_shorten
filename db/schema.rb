@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_15_063623) do
+ActiveRecord::Schema.define(version: 2020_08_16_083127) do
 
   create_table "short_links", force: :cascade do |t|
     t.string "key"
@@ -18,6 +18,19 @@ ActiveRecord::Schema.define(version: 2020_08_15_063623) do
     t.datetime "expire_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "tracks", force: :cascade do |t|
+    t.integer "short_link_id"
+    t.string "referer"
+    t.string "ip_address"
+    t.integer "clicks"
+    t.datetime "clicked_at"
+    t.string "country_code"
+    t.string "user_agent"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["short_link_id"], name: "index_tracks_on_short_link_id"
   end
 
 end
