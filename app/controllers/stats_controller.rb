@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class StatsController < ApplicationController
   def index
     ## Using joining and group by clause we can get sum of clicks in a single query along with short_links data

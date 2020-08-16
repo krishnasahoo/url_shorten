@@ -63,3 +63,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "jquery-rails"
 gem 'geocoder'
 gem 'countries', :require => 'countries/global'
+group :development, :test do
+  gem "rspec-rails"
+  gem "rubocop"
+  gem "rubocop-rails"
+end
